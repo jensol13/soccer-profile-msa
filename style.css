@@ -1,45 +1,132 @@
 <style type="text/css">
 
 
+html {
+    height: 100%;
+    
+    }
+
+body {
+    font-family: 'Raleway'. sans-serif;
+    margin: auto;
+    background: none;
+
+    }
 
 
+#logo {
+    
+    position: absolute;
+    z-index:99;
+    height: auto;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    top: -10%;
+    left: 50%;
+    margin:0;
+    
+    }
 
 
+.fixed-bg {
+    
+    background-image: url(../soccer-profile-msa/images/soccerfield-at-night.jpg);
+    background-position:50% 50%; 
+    background-repeat: no-repeat; 
+    display:block; 
+    height: 578px; 
+    background-attachment: fixed;
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover;
+    
+    }
 
 
+#center-heading {
+    text-align: center;
+    position:relative;
+    display:block; 
+   
+    }
 
+.margin-30 {
+    padding-top: 10px;
+    
+    }
 
+.section {
+    text-align: center;
+    padding-top: 245px;
+    padding-bottom: 0px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 12px #990D33;
+   
+    }
 
+.splash-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    }
 
+p {
+    font-size: 20px;
+    font-weight: 200;
+    
+    }
 
+.btn-lg {
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1px;
+    border: 2px solid white;
+    font-weight: 600;
+    letter-spacing: normal;
+    
+    }
 
+.btn-lg:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    transition: all ease-in-out 300ms;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #990D33;
 
+    }
 
+.btn-lg:focus {
+    color: white;
+    
+    }
 
+.navbar-maya {
+    position: relative;
+    text-align: center;
+    
+}
 
+.navigation-container {
+    position: relative;
+    height: 85px;
+    background-color: white;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar-toggle {
+    text-align: center;
+    float: none;
+}
+#navigation {
+    
+    
+}
 
 
 
