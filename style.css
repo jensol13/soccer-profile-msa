@@ -61,7 +61,7 @@ body {
     padding-bottom: 0px;
     color: white;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 12px #990D33;
+    text-shadow: 3px 3px 8px #909090;
    
     }
 
@@ -97,7 +97,7 @@ p {
     border-color: black;
     transition: all ease-in-out 300ms;
     border-radius: 5px;
-    box-shadow: 1px 1px 20px #990D33;
+    box-shadow: 3px 3px 20px #909090;
 
     }
 
@@ -106,26 +106,39 @@ p {
     
     }
 
+.navbar-header .navbar-toggle {
+    text-align: center;
+    float: none;
+    
+    }
+
+
 .navbar-maya {
-    position: relative;
     text-align: center;
     
-}
+    }
+
 
 .navigation-container {
     position: relative;
     height: 85px;
     background-color: white;
+    width: auto;
     
+    }
+
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.navbar-toggle {
-    text-align: center;
-    float: none;
-}
-#navigation {
-    
-    
+@media (max-width: 768px) {
+    #main-nav  {
+        
+    }
 }
 
 
