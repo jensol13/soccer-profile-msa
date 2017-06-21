@@ -106,17 +106,20 @@ p {
     
     }
 
+
+
 .navigation-container {
     position: relative;
     height: 85px;
-    
-    
+  
     }
 
 .navbar-header .navbar-toggle {
     text-align: center;
     float: none;
-    
+    text-decoration: none;
+    color: #999999;
+
     }
 
 .navbar-maya {
@@ -127,28 +130,35 @@ p {
     padding-bottom: 10px;
     box-shadow: 0 0 4px;
     z-index: 50;
-    
+   
     }
-
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-}
-
-nav {
-    display: block;
-}
 
 nav .navbar-nav {
     display: inline-block;
     float: none;
-
+    
     }
 
+.page-scroll {
+    color: #999999;
+    font-weight: 700;
+    
+    }
 
+.page-scroll:focus{
+    color: black;
+    background-color: white !important;
+    border-bottom: 2px solid black;
+    
+    }
 
+.page-scroll:hover {
+    color: #D4633E;
+    background-color: white !important;
+    border-bottom: 2px solid #D4633E;
+    transition: all ease-in-out 250ms;
+    
+    }
 
 
 
