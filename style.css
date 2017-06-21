@@ -106,40 +106,51 @@ p {
     
     }
 
+.navigation-container {
+    position: relative;
+    height: 85px;
+    
+    
+    }
+
 .navbar-header .navbar-toggle {
     text-align: center;
     float: none;
     
     }
 
-
 .navbar-maya {
     text-align: center;
-    
-    }
-
-
-.navigation-container {
-    position: relative;
-    height: 85px;
     background-color: white;
-    width: auto;
+    border-radius: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 4px;
+    z-index: 50;
     
     }
 
-.navbar .navbar-header,
-.navbar-collapse {
-    float:none;
-    vertical-align: top;
-    padding-left: 0;
-    padding-right: 0;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
 }
 
-@media (max-width: 768px) {
-    #main-nav  {
-        
-    }
+nav {
+    display: block;
 }
+
+nav .navbar-nav {
+    display: inline-block;
+    float: none;
+
+    }
+
+
+
+
+
 
 
 
