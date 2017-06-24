@@ -10,12 +10,19 @@ body {
     font-family: 'Raleway'. sans-serif;
     margin: auto;
     background: none;
-
+    height: 100%;
+    position: relative;
     }
 
+section {
+    display: block;
+    
+    }
+
+ 
 
 #logo {
-    
+    margin-top: 50px;
     position: absolute;
     z-index:99;
     height: auto;
@@ -31,15 +38,25 @@ body {
 .fixed-bg {
     
     background-image: url(../soccer-profile-msa/images/soccerfield-at-night.jpg);
-    background-position:50% 50%; 
+    background-position: 50% 50%; 
     background-repeat: no-repeat; 
-    display:block; 
-    height: 578px; 
+    display: block; 
+    height: auto;
     background-attachment: fixed;
-    -moz-background-size:cover; 
-    -webkit-background-size:cover; 
-    background-size:cover;
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-size: cover;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 8px #909090;
     
+    }
+
+section {
+    padding-top: 245px;
+    padding-bottom: 200px;
+   
     }
 
 
@@ -50,30 +67,23 @@ body {
    
     }
 
-.margin-30 {
-    padding-top: 10px;
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     
     }
 
-.section {
-    text-align: center;
-    padding-top: 245px;
-    padding-bottom: 0px;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow: 3px 3px 8px #909090;
-   
-    }
+
 
 .splash-title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     
     }
 
-p {
+#attributes {
     font-size: 20px;
     font-weight: 200;
     
@@ -106,40 +116,49 @@ p {
     
     }
 
-
-
 .navigation-container {
+    background-color: #F2F2F2;
     position: relative;
-    height: 82px;
-    box-shadow: 0 0 3px;
-  
+    height: 81px;
+
     }
 
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 999 !important;
+    position:fixed;
+}
+
 .navbar-header .navbar-toggle {
-    text-align: center;
+    
     float: none;
     text-decoration: none;
     color: #999999;
+    
 
     }
 
 .navbar-maya {
-    text-align: center;
+    transition: all ease-in-out 500ms;
     background-color: white;
-    border-radius: 0px;
-    margin-bottom: 10px;
+    border-radius: 0;
+    margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    box-shadow: 0 0 4px rgba(0, 0, 0,.25);
     z-index: 50;
    
     }
+.navbar-maya .navbar-nav {
+    float:none;
+    display:inline-block;
+    text-align: center;
+}
 
-nav .navbar-nav {
-    display: inline-block;
-    float: none;
-    
-    }
+
+
+
 
 .page-scroll {
     color: #999999;
@@ -177,13 +196,39 @@ nav .navbar-nav {
     display: inline-block;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 32px;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
     
     
 }
 
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+        text-align: center !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        text-align: center !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+        text-align: center !important;
+    }
+    .navbar-header {
+        float:none;
+        text-align: center !important;
+    }
+    
+    button .navbar-toggle .collapsed {
+        text-align: center !important;
+    }
+}
 
 </style>
