@@ -14,23 +14,20 @@ body {
     position: relative;
     }
 
-section {
-    display: block;
-    
-    }
 
- 
 
 #logo {
     margin-top: 50px;
     position: absolute;
-    z-index:99;
+    z-index: 99;
     height: auto;
     max-width: 100%;
     transform: translate(-50%, -50%);
     top: -10%;
     left: 50%;
     margin:0;
+    padding: 0 10px;
+    
     
     }
 
@@ -41,7 +38,7 @@ section {
     background-position: 50% 50%; 
     background-repeat: no-repeat; 
     display: block; 
-    height: auto;
+    height: 100%;
     background-attachment: fixed;
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
@@ -50,13 +47,13 @@ section {
     color: white;
     letter-spacing: 1px;
     text-shadow: 3px 3px 8px #909090;
-    
+   
     }
 
-section {
-    padding-top: 245px;
-    padding-bottom: 200px;
-   
+#top {
+    display: block;
+    padding-top: 25%;
+    padding-bottom: 18%;
     }
 
 
@@ -64,6 +61,7 @@ section {
     text-align: center;
     position:relative;
     display:block; 
+    font-size-adjust: auto;
    
     }
 
@@ -73,14 +71,28 @@ section {
     
     }
 
+@media (max-width: 767px) and (min-width: 400px) {
 
+.splash-title {
+    font-size: 20px !important;
+    letter-spacing: 1px;
+    }
+    }
+
+@media (max-width: 767px) and (min-width: 400px) {
+
+#attributes {
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    }
+    }
 
 .splash-title {
     font-size: 28px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
-    
+    font-size-adjust: auto;
     }
 
 #attributes {
@@ -158,17 +170,23 @@ section {
     
     }
 
-.navbar-maya .nav>li>a {
+.navbar-maya .nav li a {
     font-weight: 700;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     
     }
 
+.navbar-maya .nav >li.active>a {
+    color: black;
+    border-bottom-color: black;
+
+    }
 
 .page-scroll {
     text-decoration: none;
     color: #999999;
+    transition: all ease-in-out 500ms;
     
     }
 
@@ -176,7 +194,7 @@ section {
     text-decoration: none;
     color: black;
     background-color: transparent !important;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid black !important;
     
     }
 
@@ -189,15 +207,17 @@ section {
     
     }
 
-#profile {
+.section {
     padding-top: 60px;
     background-color: #F7F6F4;
-}
+    
+    }
 
 .section-heading {
     text-align: center;
     margin-bottom: 45px;
-}
+    
+    }
 
 .section-title {
     display: inline-block;
@@ -206,14 +226,15 @@ section {
     font-size: 32px;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
-    
-    
-}
+    padding-top: 20px;
+
+    }
 
 p {
     font-size: 16px;
     margin-top: 10px;
-}
+    
+    }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
@@ -237,6 +258,9 @@ p {
     button .navbar-toggle .collapsed {
         text-align: center !important;
     }
-}
+    }
+
+
+
 
 </style>
