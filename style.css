@@ -128,15 +128,14 @@ section {
     width: 100%;
     z-index: 999 !important;
     position:fixed;
-}
+    
+    }
 
 .navbar-header .navbar-toggle {
-    
     float: none;
     text-decoration: none;
     color: #999999;
     
-
     }
 
 .navbar-maya {
@@ -150,34 +149,42 @@ section {
     z-index: 50;
    
     }
+
 .navbar-maya .navbar-nav {
+    position: relative;
     float:none;
     display:inline-block;
     text-align: center;
-}
+    
+    }
 
-
-
+.navbar-maya .nav>li>a {
+    font-weight: 700;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    
+    }
 
 
 .page-scroll {
+    text-decoration: none;
     color: #999999;
-    font-weight: 700;
-    
     
     }
 
 .page-scroll:focus{
+    text-decoration: none;
     color: black;
-    background-color: white !important;
+    background-color: transparent !important;
     border-bottom: 2px solid black;
     
     }
 
 .page-scroll:hover {
+    text-decoration: none;
     color: #D4633E;
-    background-color: white !important;
-    border-bottom: 2px solid #D4633E;
+    background-color: transparent !important;
+    border-bottom: 2px solid #D4633E !important;
     transition: all ease-in-out 250ms;
     
     }
@@ -211,19 +218,20 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
-        text-align: center !important;
+        visibility: visible !important;
+        
     }
     .navbar-collapse.collapse.in {
         display: block !important;
-        text-align: center !important;
+        
     }
     .navbar-header .collapse, .navbar-toggle {
         display:block !important;
-        text-align: center !important;
     }
+    
     .navbar-header {
         float:none;
-        text-align: center !important;
+        
     }
     
     button .navbar-toggle .collapsed {
