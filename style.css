@@ -1,19 +1,18 @@
 <style type="text/css">
 
 
-html {
+html, body {
     height: 100%;
+    position: relative;
     
     }
 
 body {
     font-family: 'Raleway'. sans-serif;
-    margin: auto;
-    background: none;
-    height: 100%;
-    position: relative;
+    margin: 0;
+    display: block;
+   
     }
-
 
 
 #logo {
@@ -27,19 +26,13 @@ body {
     left: 50%;
     margin:0;
     padding: 0 10px;
-    
-    
+
     }
 
 
-.fixed-bg {
+.splash {
+    background: url(../soccer-profile-msa/images/soccerfield-at-night.jpg) fixed top center;
     
-    background-image: url(../soccer-profile-msa/images/soccerfield-at-night.jpg);
-    background-position: 50% 50%; 
-    background-repeat: no-repeat; 
-    display: block; 
-    height: 100%;
-    background-attachment: fixed;
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
     background-size: cover;
@@ -50,41 +43,10 @@ body {
    
     }
 
-#top {
-    display: block;
-    padding-top: 25%;
-    padding-bottom: 18%;
-    }
-
-
-#center-heading {
-    text-align: center;
-    position:relative;
-    display:block; 
-    font-size-adjust: auto;
-   
-    }
-
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.opening-section {
+    padding: 200px 0;
+    transition: all ease-in-out 250ms; 
     
-    }
-
-@media (max-width: 767px) and (min-width: 400px) {
-
-.splash-title {
-    font-size: 20px !important;
-    letter-spacing: 1px;
-    }
-    }
-
-@media (max-width: 767px) and (min-width: 400px) {
-
-#attributes {
-    font-size: 16px !important;
-    letter-spacing: 1px;
-    }
     }
 
 .splash-title {
@@ -139,19 +101,13 @@ body {
     top: 0;
     width: 100%;
     z-index: 999 !important;
-    position:fixed;
+    position: fixed;
     
     }
 
-.navbar-header .navbar-toggle {
-    float: none;
-    text-decoration: none;
-    color: #999999;
-    
-    }
 
 .navbar-maya {
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 250ms;
     background-color: white;
     border-radius: 0;
     margin-bottom: 20px;
@@ -159,18 +115,29 @@ body {
     padding-bottom: 10px;
     box-shadow: 0 0 4px rgba(0, 0, 0,.25);
     z-index: 50;
+    text-align: center;
    
     }
+
+.navbar-toggle {
+    float: none;
+    color: #342C28;
+}
 
 .navbar-maya .navbar-nav {
     position: relative;
     float:none;
     display:inline-block;
-    text-align: center;
-    
+
     }
 
-.navbar-maya .nav li a {
+.navbar {
+    
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.navbar-maya .nav>li>a {
     font-weight: 700;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
@@ -183,14 +150,13 @@ body {
 
     }
 
-.page-scroll {
+a {
     text-decoration: none;
     color: #999999;
-    transition: all ease-in-out 500ms;
     
     }
 
-.page-scroll:focus{
+a:focus{
     text-decoration: none;
     color: black;
     background-color: transparent !important;
@@ -198,9 +164,9 @@ body {
     
     }
 
-.page-scroll:hover {
+a:hover {
     text-decoration: none;
-    color: #D4633E;
+    color: #D4633E !important;
     background-color: transparent !important;
     border-bottom: 2px solid #D4633E !important;
     transition: all ease-in-out 250ms;
@@ -208,7 +174,14 @@ body {
     }
 
 .section {
-    padding-top: 60px;
+    display:block;
+   
+    height: auto;
+
+    }
+
+.profile-section {
+    
     background-color: #F7F6F4;
     
     }
@@ -226,9 +199,16 @@ body {
     font-size: 32px;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
-    padding-top: 20px;
 
     }
+.img-responsive {
+    padding-top: 4%;
+    max-height: 480px;
+    width: auto;
+   
+  
+}
+
 
 p {
     font-size: 16px;
@@ -236,27 +216,48 @@ p {
     
     }
 
+
+
+.section { padding-top: 75px; }
+@media screen only and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
         visibility: visible !important;
-        
     }
+    
     .navbar-collapse.collapse.in {
         display: block !important;
         
     }
+    
     .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
+        display: block !important;
     }
     
     .navbar-header {
-        float:none;
-        
+          
     }
-    
-    button .navbar-toggle .collapsed {
-        text-align: center !important;
+    }
+
+
+@media (max-width: 767px) and (min-width: 400px) {
+
+.splash-title {
+    font-size: 20px !important;
+    letter-spacing: 1px;
+    }
+    }
+
+@media (max-width: 767px) and (min-width: 400px) {
+
+#attributes {
+    font-size: 16px !important;
+    letter-spacing: 1px;
     }
     }
 
