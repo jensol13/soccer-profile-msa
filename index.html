@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="soccer-profile-msa/animate.css">
      
         <link rel="stylesheet" type="text/css" href="style.css">
         
@@ -37,9 +38,9 @@
                 <h1 class="splash-title">
                     student athlete &amp; your new recruit
                 </h1>
-                    <p id="attributes">versatility - positivity - diligent - coachability - reliability</p>
+                    <p class="animated flip" id="attributes">versatility - positivity - diligent - coachability - reliability</p>
             </div>
-            <a class="btn btn-lux white btn-lg" href="#navigation">Click Here</a>
+            <a class="btn btn-lux white btn-lg" href="#navigation">Get Started</a>
                 
             </div><!--div center-heading-->
  
@@ -108,19 +109,19 @@
     
    <!--END NAVIGATION-->
     <!--Profile-->
-<section  id="profile" class="section profile-section">
+<section  id="profile" class="section color-section">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-xs-12 section-heading">
             
             <h2 class="section-title">Student Profile</h2>
-                <p>Maya has played soccer for several years.  She continues to grow, evolve and adapt to the world of soccer and all the sport has to offer. Click on the picture to view more.</p>
+                
                 
                 <img class="img-responsive margin" id="profilePic" src="images/headshot1.jpg" alt="Maya Solis Alvarez" data-toggle="modal" data-target="#myModal" title="Click To See More">
              
                 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal animated bounceInLeft" id="myModal" role="dialog">
                     <div class="modal-dialog">
     
                         <!-- Modal content-->
@@ -130,18 +131,22 @@
                                 <h3 class="modal-title">Maya Solis Alvarez</h3>
                                 </div>
                             <div class="modal-body">
-                                <p class="jersey"><strong>littleton United<br>Jersey &#35;20</strong></p>
-                                <p><strong>Height:</strong> 5'7"</p>
-                                <p><strong>Weight:</strong> 135 lbs</p>
-                                <p><strong>DOB:</strong> 12/2000</p>
-                                <p><strong>Email:</strong> maya.alva12@gmail.com</p>
-                                <p><strong>Tel:</strong> 303-999-6448</p>
-                                <p><strong>Parent:</strong> Jennifer Solis</p>
+                                
+                                <p id="jersey"><strong>United Jersey &#35;20</strong></p>
+                                <ul class="modal-list">
+                                <li><strong>Height:</strong> 5'7"</li>
+                                <li><strong>Weight:</strong> 135 lbs</li>
+                                <li><strong>DOB:</strong> 12/2000</li>
+                                <li><strong>Email:</strong> maya.alva12@gmail.com</li>
+                                <li><strong>Tel:</strong> 303-999-6448</li>
+                                <li><strong>Parent:</strong> Jennifer Solis</li>
+                            </ul>
                             </div><!--modal body-->
                         </div><!--modal content-->    
                     </div><!--modal dialog-->
                 </div><!--modal-->     
                 <!--END MODAL-->
+                
             </div><!--section heading-->
         </div><!--row-->
             
@@ -150,16 +155,36 @@
 </section>
 <!--END STUDENT PROFILE-->
     
-
-    
+<!--BEGIN CAREER OBJECTIVE-->
+<section  id="college-career-objective" class="section career-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-12 section-heading">
+            
+            <h2 class="section-title">college career objective</h2>
+                <p>My higher educational goal is to pursue a degree in psychology and/or anatomy.  The human body, mind and behavior is a continuous mystery that I would passionately like to get involved in professionally.  I also thrive on helping and working with others.</p>
+                <p>As for my soccer athletic abilities, I adore and respect the game of soccer and the decipline it has given me.  I have the drive and passion for excellence on and off the pitch.  I am the type of player who takes on my own accountability and will apply myself to the fullest to contribute to the success of the team.</p>
+                
+                <i class="fa fa-institution" id="college">
+                </i>
+                
+            </div><!--section heading-->
+        </div><!--row-->
+    </div><!--container-->  
+</section>
            
     
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         
 <script type="text/javascript">
+    
+    document.addEventListener("scroll", function() {   
+    document.activeElement.blur();
+    });//after selecting on navbar focus will release on scroll
    
-   
+//scrolling effect
 $("a[href^='#']").on("click", function(e) {
     e.preventDefault();
     $("html, body").animate({
@@ -171,16 +196,30 @@ $("a[href^='#']").on("click", function(e) {
             scrollTop: $(window.location.hash).offset().top
             }, 1000);
             };
-       
-document.addEventListener("scroll", function() {   
-    document.activeElement.blur();
-    });
-            
+//END SCROLLING
+        
 $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
-    });
+    }); //collapsed navbar will hide once menu option is selected
             
-            
+    
+$(document).ready(function(){
+    
+
+	function animationClick(trigger, element, animation){
+    element = $(element);
+	trigger = $(trigger);
+    trigger.click(
+        function() {
+            element.addClass('animated ' + animation);          
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);           
+ 
+        });
+    }
+});    
 
     
         </script>

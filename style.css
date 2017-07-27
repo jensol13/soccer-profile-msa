@@ -60,6 +60,8 @@ body {
 #attributes {
     font-size: 20px;
     font-weight: 200;
+    color: white;
+    text-align: center;
     
     }
 
@@ -153,7 +155,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #999999;
+    color: #9d9d9d;
     
     }
 
@@ -177,17 +179,19 @@ a:hover {
 .section { 
     display:block;
     height: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0,.25);
 
     }
 
-.profile-section {
+.color-section {
     background-color: #F7F6F4;
     
     }
 
 .section-heading {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     
     }
 
@@ -197,13 +201,17 @@ a:hover {
     font-size: 32px;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
 
     }
 
 p {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
+    color: #555554;
+    text-align: left;
     
     }
 
@@ -211,11 +219,10 @@ p {
     height: 100%;
     width: auto;
     
-}
+    }
 
 .margin {
     margin: 0 auto;
-    padding-top: ;
     border-radius: 50%;
     box-shadow: 10px 4px 10px rgba(0, 0, 0,.35);
     cursor: pointer;
@@ -223,7 +230,12 @@ p {
     }
 
 .margin:hover {
-    opacity: .7;
+    opacity: .8;
+    
+    }
+
+.modal {
+    margin-top: 12%;
     
     }
 
@@ -232,18 +244,38 @@ p {
     
     }
 
-.modal-content {
-    opacity: .97;
-    
-    }
 
-.jersey {
+#jersey {
     color: #D4633E;
     text-transform: uppercase;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 31%;
     
     }
 
+.modal-list {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: black;
+    list-style-type: none;
+    text-align: justify;
+    margin-left: 24%;
+    
+    }
 
+.career-section {
+    background-color: white;
+    
+    }
+
+.fa-institution {
+    font-size: 112px;
+    color: #D4633E;
+    margin-top: 5%;
+    
+    }
 
 
 .section { padding-top: 75px; }
