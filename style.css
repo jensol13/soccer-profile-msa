@@ -277,6 +277,69 @@ p {
     
     }
 
+.academics-section {
+    background-color: #F2F2F2;
+}
+
+.fa-book {
+    font-size: 112px;
+    color: #D4633E;
+    margin-top: 5%;
+    
+    }
+
+.academic-list {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: black;
+    list-style-type: none;
+ 
+    }
+
+.panel-heading {
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    display: block;
+}
+
+
+
+.come-in {
+  -webkit-transform: translateY(150px);
+      -ms-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-animation: come-in 0.8s ease forwards;
+          animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.already-visible {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes come-in {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes come-in {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 
 .section { padding-top: 75px; }
 @media screen only and (max-width: 768px) {
