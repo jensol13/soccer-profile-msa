@@ -299,13 +299,17 @@ p {
     text-align: center;
     border-bottom: 2px solid lightgray;
     display: block;
-}
+    text-transform: uppercase;
+    
+    }
 
 .panel {
     box-shadow: 10px 4px 10px rgba(0, 0, 0,.35);
     height: 100%;
     
     }
+
+/*panel size*/
 
 .row-flex, .row-flex > div[class*='col-'] {  
     display: -webkit-box;
@@ -344,10 +348,10 @@ p {
     flex: 2;
 }
 
+/*end panel size*/
 
 
-
-
+/*panel animation*/
 .come-in {
   -webkit-transform: translateY(150px);
       -ms-transform: translateY(150px);
@@ -383,6 +387,7 @@ p {
   }
 }
 
+/*end panel animation*/
 
 .section { padding-top: 75px; }
 @media screen only and (max-width: 768px) {
