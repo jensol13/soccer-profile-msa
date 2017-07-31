@@ -265,10 +265,7 @@ p {
     
     }
 
-.career-section {
-    background-color: white;
-    
-    }
+
 
 .fa-institution {
     font-size: 112px;
@@ -277,7 +274,7 @@ p {
     
     }
 
-.academics-section {
+.color-section {
     background-color: #F2F2F2;
 }
 
@@ -408,11 +405,7 @@ p {
     
     .navbar-header .collapse, .navbar-toggle {
         display: block !important;
-    }
-    
-    .navbar-header {
-          
-    }
+    } 
     }
 
 
