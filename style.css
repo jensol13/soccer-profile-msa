@@ -93,7 +93,7 @@ body {
     }
 
 .navigation-container {
-    background-color: #F2F2F2;
+    background-color: #909090;
     position: relative;
     height: 81px;
 
@@ -386,6 +386,51 @@ p {
 
 /*end panel animation*/
 
+
+.club li {
+    font-size: 16px;
+    color: black;
+    list-style-type: none;
+    text-align: left;
+ 
+    }
+
+.clubtitle {
+    text-transform: uppercase;
+}
+
+
+.location {
+    text-transform: uppercase !important;
+    font-weight: bold;
+    text-align: center !important;
+    
+    }
+
+.carousel {
+    margin-top: 20px;
+}
+
+.item {
+    width: 100%;
+    
+}
+
+.embed-resonsive {
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.youtube {
+    text-align: center;
+    font-weight: 600;
+}
+
+video {
+    width: 50%;
+    height: 80%;
+}
 .section { padding-top: 75px; }
 @media screen only and (max-width: 768px) {
     body { padding-top: 0px; }
