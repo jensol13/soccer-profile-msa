@@ -276,7 +276,8 @@ p {
 
 .color-section {
     background-color: #F2F2F2;
-}
+    
+    }
 
 .fa-book {
     font-size: 112px;
@@ -337,13 +338,13 @@ p {
     display: -webkit-flex;
     flex: 1 100%;
 	flex-flow: column nowrap;
-}
+    }
 
 .flex-grow {
 	display: flex;
     -webkit-flex: 2;
     flex: 2;
-}
+    }
 
 /*end panel size*/
 
@@ -397,7 +398,7 @@ p {
 
 .clubtitle {
     text-transform: uppercase;
-}
+    }
 
 
 .location {
@@ -409,28 +410,37 @@ p {
 
 .carousel {
     margin-top: 20px;
-}
+    }
 
 .item {
     width: 100%;
     
-}
+    }
 
-.embed-resonsive {
-    margin-top: 30px;
-    padding-top: 15px;
+.embed-responsive {
+    margin-bottom: 30px;
     width: 100%;
-}
+    
+    }
 
 .youtube {
     text-align: center;
     font-weight: 600;
-}
+    
+    }
 
 video {
-    width: 50%;
-    height: 80%;
+    width: 70%;
+    
+    }
+
+.footer {
+    background-color: #383d56;
 }
+
+
+
+
 .section { padding-top: 75px; }
 @media screen only and (max-width: 768px) {
     body { padding-top: 0px; }
