@@ -22,7 +22,7 @@
   </head>
     
 <body data-spy="scroll" data-target="#main-nav" data-offset="85">
-    
+        
   <!--intro heading Maya-->
     
 <section class="auto-height opening-section splash" id="top">
@@ -116,9 +116,10 @@
             
             <h2 class="section-title">Student Profile</h2>
                 
-                
+                <div class="student-image">
                 <img class="img-responsive" id="profilePic" src="images/headshot1.jpg" alt="Maya Solis Alvarez" data-toggle="modal" data-target="#myModal" title="Click To See More">
-             
+                <h4><span>Click To View<br>Details</span></h4> 
+                </div>
                 
                 <!-- Modal -->
                 <div class="modal animated bounceInLeft" id="myModal" role="dialog">
@@ -337,7 +338,7 @@ Coach Ian</p>
 <section  id="gallery" class="section colorless-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 section-heading">
+            <div class="col-md-8 col-md-offset-2 col-xs-12 section-heading">
             
             <h2 class="section-title">Gallery</h2>
                 
@@ -354,15 +355,15 @@ Coach Ian</p>
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active text-center">
-      <img id="img-one" class="galleryslides center-block" src="images/goodpic2copy.png" alt="kicking the ball" style="max-height: 582px;">
+      <img id="img-one" class="galleryslides center-block" src="images/goodpic2copy.png" alt="kicking the ball">
     </div>
 
     <div class="item text-center">
-      <img class="galleryslides center-block" src="images/headercopy.jpg" alt="header" style="max-height: 582px">
+      <img class="galleryslides center-block" src="images/headercopy.jpg" alt="header">
     </div>
 
     <div class="item">
-      <img class="galleryslides" src="images/dribble1copy.png" alt="dribble" style="max-height: 582px">
+      <img class="galleryslides" src="images/dribble1copy.png" alt="dribble">
     </div>
       
     <div class="item text-center">
@@ -389,7 +390,7 @@ Coach Ian</p>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
                         <h3 class="youtube">YouTube Video with Maya Alvarez and TRHS</h3>
                         <p><strong>2017 High School Team Jersey #29</strong></p>
                         <p><strong>Minute Map:</strong> 2:37 - 2:57 - 3:26 - 4:27 - 4:52 - 5:25 - 5:40</p>
@@ -431,6 +432,8 @@ Coach Ian</p>
         </div>
     </div>   
 </div>
+    
+    
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        
@@ -439,7 +442,6 @@ Coach Ian</p>
         
 <script type="text/javascript">
     
- 
     
     document.addEventListener("scroll", function() {   
     document.activeElement.blur();
@@ -464,26 +466,8 @@ $("a[href^='#']").on("click", function(e) {
 $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
     }); //collapsed navbar will hide once menu option is selected
-            
-    
-//animation for click function
-$(document).ready(function(){
-    
-	function animationClick(trigger, element, animation){
-    element = $(element);
-	trigger = $(trigger);
-    trigger.click(
-        function() {
-            element.addClass('animated ' + animation);          
-            //wait for animation to finish before removing classes
-            window.setTimeout( function(){
-                element.removeClass('animated ' + animation);
-            }, 2000);           
  
-        });
-    }
-});    
-    
+
 //animation for panels on refresh or initial load of section
     
   (function($) {  
